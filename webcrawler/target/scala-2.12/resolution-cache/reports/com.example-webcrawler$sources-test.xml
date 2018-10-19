@@ -7,7 +7,7 @@
 		revision="0.1.0-SNAPSHOT"
 		conf="test"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool"
-		date="20181016192950"/>
+		date="20181019134133"/>
 	<dependencies>
 		<module organisation="org.scala-lang" name="scala-reflect">
 			<revision name="2.12.7" status="release" pubdate="20180927103203" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.12.7/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="10">
@@ -75,7 +75,7 @@
 				<metadata-artifact status="no" details="" size="2842" time="0" location="C:\Users\bas_v\.ivy2\cache\org.json4s\json4s-native_2.12\ivy-3.6.0-M3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/json4s/json4s-native_2.12/3.6.0-M3/json4s-native_2.12-3.6.0-M3.pom"/>
 				<caller organisation="com.example" name="webcrawler$sources" conf="test, compile, runtime" rev="3.6.0-M3" rev-constraint-default="3.6.0-M3" rev-constraint-dynamic="3.6.0-M3" callerrev="0.1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="json4s-native_2.12" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="8966" time="375" location="C:\Users\bas_v\.ivy2\cache\org.json4s\json4s-native_2.12\srcs\json4s-native_2.12-3.6.0-M3-sources.jar">
+					<artifact name="json4s-native_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="8966" time="0" location="C:\Users\bas_v\.ivy2\cache\org.json4s\json4s-native_2.12\srcs\json4s-native_2.12-3.6.0-M3-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/json4s/json4s-native_2.12/3.6.0-M3/json4s-native_2.12-3.6.0-M3-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -87,7 +87,7 @@
 				<metadata-artifact status="no" details="" size="3295" time="0" location="C:\Users\bas_v\.ivy2\cache\org.json4s\json4s-core_2.12\ivy-3.6.0-M3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/json4s/json4s-core_2.12/3.6.0-M3/json4s-core_2.12-3.6.0-M3.pom"/>
 				<caller organisation="com.example" name="webcrawler$sources" conf="test, compile, runtime" rev="3.6.0-M3" rev-constraint-default="3.6.0-M3" rev-constraint-dynamic="3.6.0-M3" callerrev="0.1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="json4s-core_2.12" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="43444" time="551" location="C:\Users\bas_v\.ivy2\cache\org.json4s\json4s-core_2.12\srcs\json4s-core_2.12-3.6.0-M3-sources.jar">
+					<artifact name="json4s-core_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="43444" time="0" location="C:\Users\bas_v\.ivy2\cache\org.json4s\json4s-core_2.12\srcs\json4s-core_2.12-3.6.0-M3-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/json4s/json4s-core_2.12/3.6.0-M3/json4s-core_2.12-3.6.0-M3-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -99,7 +99,7 @@
 				<metadata-artifact status="no" details="" size="2693" time="0" location="C:\Users\bas_v\.ivy2\cache\org.json4s\json4s-scalap_2.12\ivy-3.6.0-M3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/json4s/json4s-scalap_2.12/3.6.0-M3/json4s-scalap_2.12-3.6.0-M3.pom"/>
 				<caller organisation="com.example" name="webcrawler$sources" conf="test, compile, runtime" rev="3.6.0-M3" rev-constraint-default="3.6.0-M3" rev-constraint-dynamic="3.6.0-M3" callerrev="0.1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="json4s-scalap_2.12" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="18594" time="493" location="C:\Users\bas_v\.ivy2\cache\org.json4s\json4s-scalap_2.12\srcs\json4s-scalap_2.12-3.6.0-M3-sources.jar">
+					<artifact name="json4s-scalap_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="18594" time="0" location="C:\Users\bas_v\.ivy2\cache\org.json4s\json4s-scalap_2.12\srcs\json4s-scalap_2.12-3.6.0-M3-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/json4s/json4s-scalap_2.12/3.6.0-M3/json4s-scalap_2.12-3.6.0-M3-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -111,7 +111,7 @@
 				<metadata-artifact status="no" details="" size="2684" time="0" location="C:\Users\bas_v\.ivy2\cache\org.json4s\json4s-ast_2.12\ivy-3.6.0-M3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/json4s/json4s-ast_2.12/3.6.0-M3/json4s-ast_2.12-3.6.0-M3.pom"/>
 				<caller organisation="com.example" name="webcrawler$sources" conf="test, compile, runtime" rev="3.6.0-M3" rev-constraint-default="3.6.0-M3" rev-constraint-dynamic="3.6.0-M3" callerrev="0.1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="json4s-ast_2.12" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="6983" time="256" location="C:\Users\bas_v\.ivy2\cache\org.json4s\json4s-ast_2.12\srcs\json4s-ast_2.12-3.6.0-M3-sources.jar">
+					<artifact name="json4s-ast_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="6983" time="0" location="C:\Users\bas_v\.ivy2\cache\org.json4s\json4s-ast_2.12\srcs\json4s-ast_2.12-3.6.0-M3-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/json4s/json4s-ast_2.12/3.6.0-M3/json4s-ast_2.12-3.6.0-M3-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -123,7 +123,7 @@
 				<metadata-artifact status="no" details="" size="3305" time="0" location="C:\Users\bas_v\.ivy2\cache\org.scala-lang.modules\scala-xml_2.12\ivy-1.1.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.12/1.1.0/scala-xml_2.12-1.1.0.pom"/>
 				<caller organisation="com.example" name="webcrawler$sources" conf="test, compile, runtime" rev="1.1.0" rev-constraint-default="1.1.0" rev-constraint-dynamic="1.1.0" callerrev="0.1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="scala-xml_2.12" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="109905" time="228" location="C:\Users\bas_v\.ivy2\cache\org.scala-lang.modules\scala-xml_2.12\srcs\scala-xml_2.12-1.1.0-sources.jar">
+					<artifact name="scala-xml_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="109905" time="0" location="C:\Users\bas_v\.ivy2\cache\org.scala-lang.modules\scala-xml_2.12\srcs\scala-xml_2.12-1.1.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.12/1.1.0/scala-xml_2.12-1.1.0-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -135,7 +135,7 @@
 				<metadata-artifact status="no" details="" size="4296" time="0" location="C:\Users\bas_v\.ivy2\cache\com.thoughtworks.paranamer\paranamer\ivy-2.8.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer/2.8/paranamer-2.8.pom"/>
 				<caller organisation="com.example" name="webcrawler$sources" conf="test, compile, runtime" rev="2.8" rev-constraint-default="2.8" rev-constraint-dynamic="2.8" callerrev="0.1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="paranamer" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="27125" time="341" location="C:\Users\bas_v\.ivy2\cache\com.thoughtworks.paranamer\paranamer\srcs\paranamer-2.8-sources.jar">
+					<artifact name="paranamer" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="27125" time="0" location="C:\Users\bas_v\.ivy2\cache\com.thoughtworks.paranamer\paranamer\srcs\paranamer-2.8-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer/2.8/paranamer-2.8-sources.jar"/>
 					</artifact>
 				</artifacts>

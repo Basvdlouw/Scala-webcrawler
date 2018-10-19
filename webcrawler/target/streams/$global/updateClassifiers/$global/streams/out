@@ -1416,57 +1416,21 @@
 [debug] == resolving dependencies com.example#webcrawler$sources;0.1.0-SNAPSHOT->jline#jline;2.14.6 [scala-tool->master]
 [debug] 	resolved ivy file produced in cache
 [debug] :: downloading artifacts ::
-[debug] 	[NOT REQUIRED] jline#jline;2.14.6!jline.jar(src)
-[debug] 		tried C:\Users\bas_v\.ivy2\local\com.thoughtworks.paranamer\paranamer\2.8\srcs\paranamer-sources.jar
-[debug] 		tried C:\Users\bas_v\.ivy2\local\org.json4s\json4s-native_2.12\3.6.0-M3\srcs\json4s-native_2.12-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/org/json4s/json4s-native_2.12/3.6.0-M3/json4s-native_2.12-3.6.0-M3-sources.jar
-[debug] 	[NOT REQUIRED] org.scala-lang#scala-reflect;2.12.7!scala-reflect.jar(src)
-[debug] 		tried C:\Users\bas_v\.ivy2\local\org.json4s\json4s-core_2.12\3.6.0-M3\srcs\json4s-core_2.12-sources.jar
-[debug] 	[NOT REQUIRED] org.jsoup#jsoup;1.8.3!jsoup.jar(src)
-[debug] 		tried https://repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer/2.8/paranamer-2.8-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/org/json4s/json4s-core_2.12/3.6.0-M3/json4s-core_2.12-3.6.0-M3-sources.jar
-[debug] 		tried C:\Users\bas_v\.ivy2\local\org.json4s\json4s-scalap_2.12\3.6.0-M3\srcs\json4s-scalap_2.12-sources.jar
-[debug] 	[NOT REQUIRED] org.scalactic#scalactic_2.12;3.0.5!scalactic_2.12.jar(src)
-[debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.12;1.0.6!scala-xml_2.12.jar(src)
-[debug] 		tried https://repo1.maven.org/maven2/org/json4s/json4s-scalap_2.12/3.6.0-M3/json4s-scalap_2.12-3.6.0-M3-sources.jar
-[debug] 	[NOT REQUIRED] org.scalatest#scalatest_2.12;3.0.5!scalatest_2.12.jar(src)
+[debug] 	[NOT REQUIRED] com.thoughtworks.paranamer#paranamer;2.8!paranamer.jar(src)
+[debug] 	[NOT REQUIRED] org.json4s#json4s-ast_2.12;3.6.0-M3!json4s-ast_2.12.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-library;2.12.7!scala-library.jar(src)
-[debug] 		tried C:\Users\bas_v\.ivy2\local\org.json4s\json4s-ast_2.12\3.6.0-M3\srcs\json4s-ast_2.12-sources.jar
-[debug] 		tried C:\Users\bas_v\.ivy2\local\org.scala-lang.modules\scala-xml_2.12\1.1.0\srcs\scala-xml_2.12-sources.jar
+[debug] 	[NOT REQUIRED] org.jsoup#jsoup;1.8.3!jsoup.jar(src)
+[debug] 	[NOT REQUIRED] org.scalatest#scalatest_2.12;3.0.5!scalatest_2.12.jar(src)
+[debug] 	[NOT REQUIRED] org.json4s#json4s-native_2.12;3.6.0-M3!json4s-native_2.12.jar(src)
+[debug] 	[NOT REQUIRED] org.scalactic#scalactic_2.12;3.0.5!scalactic_2.12.jar(src)
+[debug] 	[NOT REQUIRED] jline#jline;2.14.6!jline.jar(src)
+[debug] 	[NOT REQUIRED] org.json4s#json4s-core_2.12;3.6.0-M3!json4s-core_2.12.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-compiler;2.12.7!scala-compiler.jar(src)
-[debug] 		tried https://repo1.maven.org/maven2/org/json4s/json4s-ast_2.12/3.6.0-M3/json4s-ast_2.12-3.6.0-M3-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.12/1.1.0/scala-xml_2.12-1.1.0-sources.jar
-[info] downloading https://repo1.maven.org/maven2/org/json4s/json4s-native_2.12/3.6.0-M3/json4s-native_2.12-3.6.0-M3-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/json4s/json4s-native_2.12/3.6.0-M3/json4s-native_2.12-3.6.0-M3-sources.jar
-[info] downloading https://repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer/2.8/paranamer-2.8-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer/2.8/paranamer-2.8-sources.jar
-[info] downloading https://repo1.maven.org/maven2/org/json4s/json4s-ast_2.12/3.6.0-M3/json4s-ast_2.12-3.6.0-M3-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/json4s/json4s-ast_2.12/3.6.0-M3/json4s-ast_2.12-3.6.0-M3-sources.jar
-[info] downloading https://repo1.maven.org/maven2/org/json4s/json4s-scalap_2.12/3.6.0-M3/json4s-scalap_2.12-3.6.0-M3-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/json4s/json4s-scalap_2.12/3.6.0-M3/json4s-scalap_2.12-3.6.0-M3-sources.jar
-[info] downloading https://repo1.maven.org/maven2/org/json4s/json4s-core_2.12/3.6.0-M3/json4s-core_2.12-3.6.0-M3-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/json4s/json4s-core_2.12/3.6.0-M3/json4s-core_2.12-3.6.0-M3-sources.jar
-[info] downloading https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.12/1.1.0/scala-xml_2.12-1.1.0-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.12/1.1.0/scala-xml_2.12-1.1.0-sources.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.12/1.1.0/scala-xml_2.12-1.1.0-sources.jar.sha1
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/json4s/json4s-ast_2.12/3.6.0-M3/json4s-ast_2.12-3.6.0-M3-sources.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.12/1.1.0/scala-xml_2.12-1.1.0-sources.jar
-[info] 	[SUCCESSFUL ] org.scala-lang.modules#scala-xml_2.12;1.1.0!scala-xml_2.12.jar(src) (228ms)
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/json4s/json4s-ast_2.12/3.6.0-M3/json4s-ast_2.12-3.6.0-M3-sources.jar
-[info] 	[SUCCESSFUL ] org.json4s#json4s-ast_2.12;3.6.0-M3!json4s-ast_2.12.jar(src) (256ms)
-[debug] 	public: downloading https://repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer/2.8/paranamer-2.8-sources.jar.sha1
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/json4s/json4s-native_2.12/3.6.0-M3/json4s-native_2.12-3.6.0-M3-sources.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer/2.8/paranamer-2.8-sources.jar
-[info] 	[SUCCESSFUL ] com.thoughtworks.paranamer#paranamer;2.8!paranamer.jar(src) (341ms)
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/json4s/json4s-native_2.12/3.6.0-M3/json4s-native_2.12-3.6.0-M3-sources.jar
-[info] 	[SUCCESSFUL ] org.json4s#json4s-native_2.12;3.6.0-M3!json4s-native_2.12.jar(src) (375ms)
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/json4s/json4s-scalap_2.12/3.6.0-M3/json4s-scalap_2.12-3.6.0-M3-sources.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/json4s/json4s-scalap_2.12/3.6.0-M3/json4s-scalap_2.12-3.6.0-M3-sources.jar
-[info] 	[SUCCESSFUL ] org.json4s#json4s-scalap_2.12;3.6.0-M3!json4s-scalap_2.12.jar(src) (493ms)
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/json4s/json4s-core_2.12/3.6.0-M3/json4s-core_2.12-3.6.0-M3-sources.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/json4s/json4s-core_2.12/3.6.0-M3/json4s-core_2.12-3.6.0-M3-sources.jar
-[info] 	[SUCCESSFUL ] org.json4s#json4s-core_2.12;3.6.0-M3!json4s-core_2.12.jar(src) (551ms)
-[debug] :: resolution report :: resolve 138ms :: artifacts dl 560ms
+[debug] 	[NOT REQUIRED] org.scala-lang#scala-reflect;2.12.7!scala-reflect.jar(src)
+[debug] 	[NOT REQUIRED] org.json4s#json4s-scalap_2.12;3.6.0-M3!json4s-scalap_2.12.jar(src)
+[debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.12;1.1.0!scala-xml_2.12.jar(src)
+[debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.12;1.0.6!scala-xml_2.12.jar(src)
+[debug] :: resolution report :: resolve 200ms :: artifacts dl 6ms
 [debug] 	report for com.example#webcrawler$sources;0.1.0-SNAPSHOT compile produced in G:\School\Paradigma opdracht\Webcrawler\Scala-webcrawler\webcrawler\target\scala-2.12\resolution-cache\reports\com.example-webcrawler$sources-compile.xml
 [debug] 	report for com.example#webcrawler$sources;0.1.0-SNAPSHOT runtime produced in G:\School\Paradigma opdracht\Webcrawler\Scala-webcrawler\webcrawler\target\scala-2.12\resolution-cache\reports\com.example-webcrawler$sources-runtime.xml
 [debug] 	report for com.example#webcrawler$sources;0.1.0-SNAPSHOT test produced in G:\School\Paradigma opdracht\Webcrawler\Scala-webcrawler\webcrawler\target\scala-2.12\resolution-cache\reports\com.example-webcrawler$sources-test.xml
@@ -1478,4 +1442,4 @@
 [debug] 	report for com.example#webcrawler$sources;0.1.0-SNAPSHOT plugin produced in G:\School\Paradigma opdracht\Webcrawler\Scala-webcrawler\webcrawler\target\scala-2.12\resolution-cache\reports\com.example-webcrawler$sources-plugin.xml
 [debug] 	report for com.example#webcrawler$sources;0.1.0-SNAPSHOT pom produced in G:\School\Paradigma opdracht\Webcrawler\Scala-webcrawler\webcrawler\target\scala-2.12\resolution-cache\reports\com.example-webcrawler$sources-pom.xml
 [debug] 	report for com.example#webcrawler$sources;0.1.0-SNAPSHOT scala-tool produced in G:\School\Paradigma opdracht\Webcrawler\Scala-webcrawler\webcrawler\target\scala-2.12\resolution-cache\reports\com.example-webcrawler$sources-scala-tool.xml
-[debug] 	resolve done (138ms resolve - 560ms download)
+[debug] 	resolve done (200ms resolve - 6ms download)
