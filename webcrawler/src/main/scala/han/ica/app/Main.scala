@@ -1,7 +1,5 @@
 package han.ica.app
 
-import org.json4s._
-import org.json4s.native.JsonMethods._
 import org.jsoup.Connection.Response
 import org.jsoup.Jsoup
 
@@ -10,47 +8,33 @@ import scala.collection.mutable.ListBuffer
 
 
 object Main {
+  //COOP often returns a server error (500) try again until it works.
+  val url = "https://www.coop.nl/zoeken?SearchTerm=hertog%2520jan"
+  val url2 = "https://www.jumbo.com/zoeken?SearchTerm=Hertog+jan&search="
+  val url3 = "https://www.coop.nl/boodschappen/dranken/bier" //Another link (coop) for test purposes (tested succesfully)
+  val url4 = "https://www.jumbo.com/zoeken?SearchTerm=bier+&search=" //Another link (jumbo) for test purposes (tested succesfully)
 
   def main(args: Array[String]): Unit = {
-
-
-    val url = "https://www.coop.nl/INTERSHOP/web/WFS/COOP-COOPBase-Site/nl_NL/-/EUR/ViewStandardCatalog-Browse?CatalogCategoryID=&PageSize=24&SortingAttribute=&CategoryName=21&CatalogID=COOP&SearchParameter=%26%40QueryTerm%3D*%26ContextCategoryUUID%3D548KAQCN5XAAAAFWkvJMRzCy%26OnlineFlag%3D1%26SupplierName%3DHertog%2BJan%26%40Sort.SalesRanking%3D0"
-    val url2 = "https://www.jumbo.com/zoeken?SearchTerm=Hertog+jan&search="
-    val url3 = "https://www.coop.nl/zoeken?SearchTerm=hertog%2520jan"
-    // println(get(url).parse().html())
-    //get(url2)
-    // Jumbo.extractProductInformation(get(url2))
-    compareProductInformation(Coop.extractProductInformation(get(url3)), Jumbo.extractProductInformation(get(url2)))
-    //    crawler(url)
-    //    print(checkedUrls)
-    //    print(nonCheckedUrls)
-
+    compareProductInformation(Coop.extractProductInformation(get(url3)), Jumbo.extractProductInformation(get(url4)))
   }
-
 
   //Experimenting with functions as parameters
-  def compareProductInformation(coop: List[String], jumbo: List[String]): Unit = {
-//    println("Bij de COOP zijn bij de ingevoerde URL de volgende producten gevonden:")
-//    for (item <- coop) {
-//      val json = parse(item)
-//      println("Product naam is " + compact(render(json \ "name")) + " met de bijbehorende prijs " + compact(render(json \ "price")))
-//    }
-
+  def compareProductInformation(shop1: List[String], shop2: List[String]): Unit = {
+    println("Bij de COOP zijn bij de ingevoerde URL de volgende producten gevonden:")
+    Coop.printProducts(shop1)
     println("Bij de Jumbo zijn bij de ingevoerde URL de volgende producten gevonden:")
-    for (i <- 0 to jumbo.length / 2) {
-      val json = parse(jumbo(i))
-      val json2 = jumbo(jumbo.length / 2 + i)
-      println("Product naam is " + compact(render(json \ "name")) + " met de bijbehorende prijs " + json2)
-    }
+    Jumbo.printProducts(shop2)
   }
 
 
-  var checkedUrls = ListBuffer[String]()
-  var nonCheckedUrls = ListBuffer[String]()
+  //Variables used by the crawler function
+  //Crawler function not yet finished, currently collects a bunch off urls until it crashes (function doesn't handle error codes yet)
+  var checkedUrls: ListBuffer[String] = ListBuffer[String]()
+  var nonCheckedUrls: ListBuffer[String] = ListBuffer[String]()
 
 
   //this function should later be refactored
-  //currently not used but should be used for the end product: get product information with only the index url e.g: https://www.ah.nl
+  //currently not used but should be used for the end product: get product information with only the index url e.g: https://www.coop.nl
   def crawler(url: String): Unit = {
     var currentUrl: String = url
     if (!checkedUrls.contains(currentUrl)) {

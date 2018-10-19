@@ -1,7 +1,8 @@
 package han.ica.app
 
 import org.json4s.JsonAST.JDouble
-import org.json4s.native.JsonMethods
+import org.json4s.native.JsonMethods._
+import org.json4s.native.JsonMethods.parse
 import org.jsoup.Connection.Response
 
 import scala.collection.JavaConverters._
@@ -25,31 +26,24 @@ object Jumbo {
     newArray
   }
 
-  def convertToJson(array: mutable.Buffer[String]) : Unit = {
+  def convertToJson(array: mutable.Buffer[String]): Unit = {
     for (item <- array) {
       if (isANumber(item)) {
         val double: Double = item.toDouble
-        var json = JsonMethods.parse("""{ "price": +""" + double + "}")
+        var json = parse("""{ "price": +""" + double + "}")
         array(array.indexOf(item)) = json.toString
         JDouble.apply(item.toDouble)
       }
     }
-   array.grouped(array.length/2).toList
+    array.grouped(array.length / 2).toList
   }
 
   def isANumber(x: String): Boolean = x.matches("^-?[0-9]+(\\.[0-9]+)?$")
 
+  def printProducts(list: List[String]): Unit = {
+    for (i <- 0 until list.length / 2) {
+      val price = ("""\d+""".r findAllIn list(list.length / 2 + i)).toList
+      println("Product naam is " + compact(render(parse(list(i)) \ "name")) + " met de bijbehorende prijs " + price.head + "." + price.last)
+    }
+  }
 }
-
-
-
-
-///-> e.attr("jum-price-format")}.toList)
-//
-//    for(product <- productInfo) {
-//      var json : JValue= product.insta
-//      (json \ "name").extract[String]
-//      println(product)
-//      println(product.extract)
-//    }
-
