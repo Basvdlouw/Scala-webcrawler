@@ -9,13 +9,13 @@ import scala.collection.mutable.ListBuffer
 
 object Main {
   //COOP often returns a server error (500) try again until it works.
-  val url = "https://www.coop.nl/zoeken?SearchTerm=hertog%2520jan"
+  val url1 = "https://www.coop.nl/zoeken?SearchTerm=hertog%2520jan"
   val url2 = "https://www.jumbo.com/zoeken?SearchTerm=Hertog+jan&search="
   val url3 = "https://www.coop.nl/boodschappen/dranken/bier" //Another link (coop) for test purposes (tested succesfully)
   val url4 = "https://www.jumbo.com/zoeken?SearchTerm=bier+&search=" //Another link (jumbo) for test purposes (tested succesfully)
 
   def main(args: Array[String]): Unit = {
-    compareProductInformation(Coop.extractProductInformation(get(url3)), Jumbo.extractProductInformation(get(url4)))
+    compareProductInformation(Coop.extractProductInformation(get(url1)), Jumbo.extractProductInformation(get(url2)))
   }
 
   //Experimenting with functions as parameters

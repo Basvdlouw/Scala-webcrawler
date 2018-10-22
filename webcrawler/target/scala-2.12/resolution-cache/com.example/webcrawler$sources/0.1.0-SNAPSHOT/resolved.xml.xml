@@ -4,7 +4,7 @@
 		module="webcrawler$sources"
 		revision="0.1.0-SNAPSHOT"
 		status="integration"
-		publication="20181019182322"
+		publication="20181022095138"
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>
